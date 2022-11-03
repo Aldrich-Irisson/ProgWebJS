@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<!-- Fig. 6.7: suma.html -->
+<!-- Secuencia de comandos de suma. -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un programa de suma</title>
+    <script>
+        var primerNumero; // Primera cadena introducida por el usuario
+        var segundoNumero; // Segunda cadena introducida por el usuario
+        var num1; // primer número a sumar
+        var num2; // segundo número a sumar
+        var suma; // suma de num1 y num2
+
+        // lee el primer número del usuario como una cadena
+        primerNumero = window.prompt("Escriba el primer entero");
+
+        // lee el segundo número del usuario como una cadena
+        segundoNumero = window.prompt("Escriba el segundo entero");
+
+        // convierte los números de cadenas a enteros
+        num1 = parseInt(primerNumero);
+        num2 = parseInt(segundoNumero);
+
+        suma = num1 + num2; // suma los números
+
+        // muestra los resultados
+        document.writeln("<h1>La suma es " + suma + "</h1>")
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

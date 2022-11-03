@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 24</title>
+    <style type="text/css">
+        table {
+            text-align: center;
+            width: 300px;
+        }
+    </style>
+    <script>
+        // instrucción
+        document.writeln('<h3> 6.24 Escriba una secuencb de comandos que calcule '
+            + 'los cuadrados y cubos de los números del 0 al 5 y produzca texto de '
+            + 'HTML5 que muestre los valores resultantes en un formato de tabla de '
+            + 'HTML5. [Nota: esta secuencia de comandos no requiere entrada del '
+            + 'usuario].</h3>');
+        // declaración de números
+        var n0 = 0;
+        var n1 = 1;
+        var n2 = 2;
+        var n3 = 3;
+        var n4 = 4;
+        var n5 = 5;
+        // creación de tabla
+        document.write("<table border='1'>");
+        document.write("<thead><tr>"
+            + "<th>número</th>"
+            + "<th>cuadrado</th>"
+            + "<th>cubo</th>"
+            + "</tr></thead>");
+        document.write("<tbody>"
+            + "<tr><td>" + n0 + "</td>"
+            + "<td>" + Math.pow(n0, 2) + "</td>"
+            + "<td>" + Math.pow(n0, 3) + "</td></tr>");
+            document.write("<tr><td>" + n1 + "</td>"
+            + "<td>" + Math.pow(n1, 2) + "</td>"
+            + "<td>" + Math.pow(n1, 3) + "</td></tr>");
+            document.write("<tr><td>" + n2 + "</td>"
+            + "<td>" + Math.pow(n2, 2) + "</td>"
+            + "<td>" + Math.pow(n2, 3) + "</td></tr>");
+            document.write("<tr><td>" + n3 + "</td>"
+            + "<td>" + Math.pow(n3, 2) + "</td>"
+            + "<td>" + Math.pow(n3, 3) + "</td></tr>");
+            document.write("<tr><td>" + n4 + "</td>"
+            + "<td>" + Math.pow(n4, 2) + "</td>"
+            + "<td>" + Math.pow(n4, 3) + "</td></tr>");
+            document.write("<tr><td>" + n5 + "</td>"
+            + "<td>" + Math.pow(n5, 2) + "</td>"
+            + "<td>" + Math.pow(n5, 3) + "</td></tr>"
+            +"</tbody></table>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

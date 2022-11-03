@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 19</title>
+    <style type="text/css">
+        h4 {
+            color: blue;
+        }
+    </style>
+    <script>
+        // declaración de variables
+        var radio, diametro, circunferencia, area;
+        var pi = Math.PI;
+        // lee el radio introducido por el usuario
+        radio = window.prompt("Escribe el radio del circulo: ");
+        // convierte el radio de cadena a entero
+        radio = parseInt(radio);
+        // calculos 
+        diametro = 2 * radio;
+        circunferencia = diametro * pi;
+        area = pi * (radio * radio);
+        // instrucción
+        document.writeln('<h3> 6.19 Escriba una secuencia de comandos que obtenga del usuario el radio de un círculo y produzca texto de HTML5 que muestre el diámetro, la circunferencia y el área de ese circulo. Use el valor constante 3.14159 para &pi;. Use las técnicas de GUI que se muestran en la figura 6.7. [Nota: también puede usar la constante predefinida Math.PI para el valor de x. Esta constante es más precisa que el valor 3.14159. El objeto Math está definido por JavaScript y provee muchas herramientas matemáticas comunes]. Use las siguientes fórmulas (r es el radio): diámetro = 2r, circunferencia = 2&pi;r, área = &pi;r<sup>2</sup>.</h3>');
+        // muestra el radio del circulo y sus datos
+        document.writeln("<h4>Radio del circulo: " + radio + "</h4>");
+        document.writeln("<h4> Diamétro: " + diametro + "</h4>");
+        document.writeln("<h4> Circunferencia: " + circunferencia + "</h4>");
+        document.writeln("<h4> Área: " + area + "</h4>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

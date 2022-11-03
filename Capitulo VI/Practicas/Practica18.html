@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18</title>
+    <script>
+        // declaración de variables
+        var num1, num2, num3, sum, prom, prod, menor, mayor;
+        // lee los números del usuario como cadena
+        num1 = window.prompt(" Escribe el primer número: ");
+        num2 = window.prompt(" Escribe el segundo número: ");
+        num3 = window.prompt(" Escribe el tercer número: ");
+        // convierte los números de cadenas a enteros
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        num3 = parseInt(num3);
+        // operaciones
+        sum = num1 + num2 + num3;
+        prom = sum / 3;
+        prod = num1 * num2 * num3;
+
+        // validaciones
+        if (num1 > num2) {
+            mayor = num1;
+            menor = num2;
+        } else {
+            mayor = num2;
+            menor = num1;
+        }
+        if (num3 > mayor) {
+            mayor = num3;
+        } else if (num3 < menor) {
+            menor = num3;
+        }
+
+        // muestra los resultados
+        window.alert("Total suma: " + sum + ".\nTotal promedio: " + prom + ".\nTotal producto: "
+            + prod + ".\nNúmero mayor: " + mayor + ".\nNúmero menor: " + menor);
+
+        // instrucción
+        document.writeln('<h3> 6.18 Escriba una secuencia de comandos que reciba tres enteros '
+            + 'del usuario y muestre la suma, promedio, producto, menor y mayor de los números '
+            + 'en un diálogo alert.</h3>');
+        // muestra los números escritos por el usuario
+        document.writeln("<ul><li>Primer número: " + num1 + "</li>");
+        document.writeln("<li>Segundo número: " + num2 + "</li>");
+        document.writeln("<li>Tercer número: " + num3 + "</li></ul>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

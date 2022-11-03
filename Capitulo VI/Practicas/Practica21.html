@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 21</title>
+    <script>
+        // instrucción
+        document.writeln('<h3> 6.21 Escriba una secuencia de comandos que lea un '
+            + 'entero, determine y produzca texto de HTML5 que muestre si es par o impar.'
+            + '(Sugerencia: use el operador residuo. Un número par es un múltiplo de 2. '
+            + 'Cualquier múltiplo de 2 deja un residuo de cero al dividirse entre 2].</h3>');
+        // declaración de variables
+        var num;
+        // lee el numero ingresado por el usuario
+        num = window.prompt("Escribe un número: ")
+        // convierte el número de cadena a entero
+        num = parseInt(num);
+        // comprueba si es par o impar
+        if ((num % 2) == 0) {
+            document.writeln("El número " + num + " es par.");
+        } else {
+            document.writeln("El número " + num + " es impar");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+    <script>
+        // definición de variables
+        var num1, num2, sum, prod, dif, cocte;
+        // lee los números del usuario como cadena
+        num1 = window.prompt(" Escribe el primer número: ");
+        num2 = window.prompt(" Escribe el segundo número: ");
+        // convierte los números de cadenas a enteros
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        // Realiza las operaciones
+        sum = num1 + num2;
+        prod = num1 * num2;
+        dif = num1 - num2;
+        cocte = num1 / num2;
+
+        // instrucción
+        document.writeln("<h3> 6.16 Escriba una secuencia de comandos que pida al usuario "
+            + " que escriba dos números, obtenga los dos números del usuario y produzca "
+            + "texto que muestre la suma, producto, diferencia y cociente. Use las técnicas "
+            + " que se muestran en la figura 6.7.</h3>");
+        // muestra los números escritos por el usuario
+        document.writeln("<ul><li>Primer número: " + num1 + "</li>")
+        document.writeln("<li>Segundo número: " + num2 + "</li><ul>")
+        // muestra los resultados
+        document.writeln("<li>Suma: " + sum + "</li>")
+        document.writeln("<li>Producto: " + prod + "</li>")
+        document.writeln("<li>Diferencia: " + dif + "</li>")
+        document.writeln("<li>Cociente: " + cocte + "</li></ul></ul>")
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

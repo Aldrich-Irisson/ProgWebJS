@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 20</title>
+    <style type="text/css">
+        p {
+            color: blue;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+    <script>
+        // declaración de variables
+        var n1, n2, n3, n4, n5, menor, mayor;
+        // lee los numeros ingresados por el usuario
+        n1 = window.prompt("Escribe el primer número: ");
+        n2 = window.prompt("Escribe el segundo número: ");
+        n3 = window.prompt("Escribe el tercer número: ");
+        n4 = window.prompt("Escribe el cuarto número: ");
+        n5 = window.prompt("Escribe el quinto número: ");
+        // convierte los números de cadena a entero
+        n1 = parseInt(n1);
+        n2 = parseInt(n2);
+        n3 = parseInt(n3);
+        n4 = parseInt(n4);
+        n5 = parseInt(n5);
+        // valida cual es el mayor y menor número
+        mayor = n1;
+        menor = n2;
+        if (n1 < n2) {
+            mayor = n2;
+            menor = n1;
+        }
+        if (n3 > mayor) {
+            mayor = n3;
+        } else if (n3 < menor) {
+            menor = n3;
+        }
+        if (n4 > mayor) {
+            mayor = n4;
+        } else if (n4 < menor) {
+            menor = n4;
+        }
+        if (n5 > mayor) {
+            mayor = n5;
+        } else if (n5 < menor) {
+            menor = n5;
+        }
+        // instrucción
+        document.writeln('<h3> 6.20 Escriba una secuencia de comandos que lea cinco enteros, '
+            + 'determine y produzca marcado que muestre los enteros menor y mayor en el grupo. '
+            + 'Use sólo las técnicas de secuencias de comandos que aprendió en este capítulo.</h3>');
+        // muestra los números escritos por el usuario y el mayor y menor de ellos
+        document.writeln("<p>Los numeros ingresados son: " + n1 + ", " + n2 + ", " + n3 + ", " + n4 + " y " + n5 + "</p>");
+        if (n1 == n2 == n3 == n4 == n5) {
+            document.writeln("<p>Todos los números son iguales.</p>");
+        } else {
+            document.writeln("<p>El mayor de los numeros es: " + mayor + "</p>");
+            document.writeln("<p>El menor de los numeros es: " + menor + "</p>");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

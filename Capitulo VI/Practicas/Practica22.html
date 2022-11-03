@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 22</title>
+    <script>
+        // instrucción
+        document.writeln('<h3> 6.22 Escriba una secuencia de comandos que lea dos '
+            + 'enteros, determine y produzca texto de HTML5 que muestre si el primero '
+            + 'es múltiplo del segundo. [Sugerencia: use el operador residuo].</h3>');
+        // declaración de variables
+        var n1, n2;
+        // lee el numero ingresado por el usuario
+        n1 = window.prompt("Escribe el primer número: ")
+        n2 = window.prompt("Escribe el segundo número: ")
+        // convierte los números de cadenas a enteros
+        n1 = parseInt(n1);
+        n2 = parseInt(n2);
+        // valida si el primer numero es múltiplo del segundo
+        if (n1 >= n2) {
+            if ((n1 % n2) == 0) {
+                document.writeln("El número " + n1 + " es múltiplo del número " + n2 + ".")
+            }
+        } else {
+            document.writeln("El número " + n1 + " no es múltiplo del número " + n2 + ".")
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
