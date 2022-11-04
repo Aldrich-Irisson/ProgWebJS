@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+    <script>
+        document.writeln("<h3>7.12 Desarrolle una secuencia de comandos que determine si alguno de los "
+            + "clientes de una tienda de departamentos se ha excedido del limite de crédito en una "
+            + "cuenta. Para cada cliente se tienen los siguientes datos: <br>"
+            + "a) El número de cuenta.<br>"
+            + "b) El saldo al inicio del mes.<br>"
+            + "c) El total de todos los artículos cargados por el cliente en el mes.<br>"
+            + "d) El total de todos los créditos aplicados a la cuenta dd cliente en el mes.<br>"
+            + "e) El límite de crédito permitido.<br>"
+            + "La secuencia de comandos debe recibir como entrada cada uno de estos datos desde un diálogo prompt como "
+            + "entero, debe calcular el nuevo saldo(= saldo inicial + cargos - créditos), mostrar el nuevo balance y determinar si éste "
+            + "excede el límite de crédito del cliente.Para los clientes cuyo límite de crédito sea excedido, la secuencia de comandos "
+            + "debe producir texto de HTML5 que muestre el mensaje 'Se excedió el límite de su crédito'.</h3>");
+
+        var numC = parseInt(window.prompt("Ingrese el numero de cuenta:"));
+        var saldoI = parseInt(window.prompt("Ingrese el saldo del inicio del mes:"));
+        var cargos = parseInt(window.prompt("Ingrese el total de todos los artículos del mes"))
+        var creditosA = parseInt(window.prompt("Ingrese los creditos  aplicados :"));
+        var limite = parseInt(window.prompt("Ingrese el límite de crédito permitido :"));
+        var nuevoS = saldoI + cargos - creditosA;
+        var total = 0, c = 0, p = 0;
+        document.writeln("<p>Suma total de los articulos: $" + total + "</p>");
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

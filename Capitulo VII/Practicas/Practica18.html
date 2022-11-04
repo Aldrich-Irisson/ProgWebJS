@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18</title>
+    <style type="text/css">
+        strong {
+            color: red;
+        }
+
+        b {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>7.18 Sin ejecutar la siguiente secuencia de comandos, determine lo que imprime:</h3>
+    <pre>&lt;script>
+        var fila = 10;
+        var columna;
+        while (fila >= 1) {
+            columna = 1;
+            document.writeln("&lt;p>");
+            while (columna &lt;= 10) {
+                document.write(fila % 2 == 1 ? "&lt;" : ">");
+                columna++
+            }
+            --fila
+            document.writeln("&lt;/p>");
+        }
+    &lt;/script></pre>
+    <p><strong>Respuesta: </strong> <b>Crea por fila una secuencia de símbolos y dependiendo si es fila par o impar escribe el símbolo: &lt; o &gt;</b></p>
+</body>
+
+</html>

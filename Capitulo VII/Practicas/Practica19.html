@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 19</title>
+    <script>
+        /* a) */
+        var x = 0, y = 0;
+        if (x < 10)
+            if (y > 10)
+                document.writeln("<p>*****</p>");
+            else
+                document.writeln("<p>######</p>");
+        document.writeln("<p>$$$$$$</p>");
+
+        /* b) */
+        if (x < 10) {
+            if (y > 10)
+                document.writeln("<p>*****</p>");
+        }
+        else {
+            document.writeln("<p>######</p>");
+            document.writeln("<p>$$$$$$</p>");
+        }
+    </script>
+</head>
+
+<body>
+    <h3>7.19 (Problema del else suelto) Determine La salida de cada uno de los siguientes segmentos de código, cuando x
+        es 9 y y es 11, y cuando x es 11 y y es 9. Observe que el intóptetc ignora la sangría en una secuencia de
+        comandos. Además, el intérprete de JavaScript siempre asocia un el se con el 1 f anterior, a menos que se le
+        indique de otra forma mediante la colocación de llaves ({}). A primera vista, tal vez no esté seguro de cuál 1 f
+        corresponde a cuál el se. Esta situación se conoce como el problema del “el se suelto". Hemos diminado b sangría
+        del siguiente código para hacer d problema más retador. (Sugerencia: Aplique las convenciones de sangría que ha
+        aprendido],</h3>
+    <p>a) var x = 0, y = 0; <br>
+        if (x &lt; 10) <br>
+        if (y > 10) <br>
+        document.writeln("&lt;p>*****&lt;/p>");<br>
+        else <br>
+        document.writeln("&lt;p>######&lt;/p>"); <br>
+        document.writeln("&lt;p>$$$$$$&lt;/p>");</p>
+    <p> Cuando x = 9 & y = 11: Ambas condiciones son cumplidas, unicamente imprime la línea que está despues del
+        segundo if.</p>
+    <p> a) if (x &lt; 10) {<br>
+        if (y > 10)<br>
+        document.writeln("&lt;p>*****&lt;/p>");<br>
+        }<br>
+        else {<br>
+        document.writeln("&lt;p>######&lt;/p>");<br>
+        document.writeln("&lt;p>$$$$$$&lt;/p>");<br>
+        }</p>
+    <p>Cuando x = 11 & y = 9: Ninguna condiciones en es cumplida e imprime el else</p>
+
+</body>
+
+</html>
