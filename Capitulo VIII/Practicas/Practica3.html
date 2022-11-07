@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style type="text/css">
+        h1 {
+            text-align: center;
+        }
+
+        strong {
+            color: red;
+            font-weight: bold;
+        }
+
+        li {
+            color: blue;
+        }
+
+        b {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejercicios de autoevaluación</h1>
+    <hr>
+    <h3>8.3 Encuentre el error en cada uno de los siguientes segmentos de código, y explique cómo corregirlo:</h3>
+    <br>
+    <ol type="a">
+        <li><code>
+                x=1;<br>
+                while (x &lt;=10);<br>
+                    <pre>   ++x;<br></pre>
+                }
+            </code></li>
+        <p><strong>ERROR: </strong> El punto y coma después del encabezado while provoca un ciclo infinito; además falta
+            una llave izquierda.
+            <br><b>Corrección: </b>Reemplazar el punto y coma por una llave izquierda ({), o eliminar tanto el punto y
+            coma (;) como la llave derecha (}).
+        </p>
+        <li><code>
+                switch ( n ) <br>
+                { <br>
+                    <pre>   case 1:</pre>
+                    <pre>       document.writeln ("El número es 1");</pre>
+                    <pre>       break;</pre>
+                    <pre>   case 2:</pre>
+                    <pre>       document.writeln ("El número es 2");</pre>
+                    <pre>   default:</pre>
+                    <pre>       document.writeln ("El número no es 1 ni 2");</pre>
+                    <pre>       break;</pre>
+                }
+            </code></li>
+        <p><strong>ERROR: </strong>Falta una instrucción break en las instrucciones del primer case. <br><b>Corrección:
+            </b>Agregue una instrucción break al final de las instrucciones para el primer case. Cabe mencionar que esta
+            omisión no es necesariamente un error, si desea que la instrucción del case 2: se ejecute siempre que lo
+            haga la instrucción del case 1:.</p>
+        <li>El siguiente código debe de imprimir los valores 1 a 10 <br>
+            <code>
+                n=1;
+                while (n &lt; 10)
+                <pre>   document.writeln(n++);<br>   if ( x % 5 == 0) <br>   document.write( "&lt;/p>&lt;p>"); <br>   ++x; <br></pre>
+                }
+            </code>
+        </li>
+        <p><strong>ERROR: </strong>Se está utilizando un operador relacional inadecuado en la condición de continuación
+            de la instrucción de repetición while. <br><b>Corrección: </b>Use &lt;= en vez de &lt;, o cambie el 10 a 11.
+        </p>
+    </ol>
+</body>
+
+</html>

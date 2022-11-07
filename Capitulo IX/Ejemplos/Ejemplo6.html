@@ -12,14 +12,14 @@
         }
 
         img {
-            width: 54px;
-            height: 54px;
+            width: 100px;
+            height: 100px;
         }
 
         div {
             border: 5px ridge royalblue;
             padding: 10px;
-            width: 120px;
+            width: 220px;
             margin-bottom: 10px;
         }
 
@@ -35,10 +35,12 @@
         var mensajes;
         var botonJugar;
         var botonTirar;
-        var tiroDados;
+        var tirodados;
+
         var miPunto;
         var valorDado1;
         var valorDado2;
+
         function iniciarJuego() {
             tirodados = document.getElementById("tirodados");
             puntoDado1Img = document.getElementById("puntoDado1");
@@ -48,7 +50,9 @@
             mensajes = document.getElementById("mensajes");
             botonJugar = document.getElementById("jugar");
             botonTirar = document.getElementById("tirar");
+
             botonTirar.disabled = true;
+
             establecerImagen(puntoDado1Img);
             establecerImagen(puntoDado2Img);
             establecerImagen(tiroDado1Img);
@@ -57,8 +61,9 @@
             primerTiro();
         }
         function primerTiro() {
-            var sumaDados = tirarDados();
-            switch (sumaDados) {
+            var sumaDeDados = tirarDados();
+
+            switch (sumaDeDados) {
                 case 7: case 11:
                     mensajes.innerHTML = "Ha ganado. Haga clic en Reproducir para jugar de nuevo.";
                     break;
@@ -92,9 +97,9 @@
             tirodados.play();
             valorDado1 = NaN;
             valorDado2 = NaN;
-            mostrarDados();
             valorDado1 = Math.floor(1 + Math.random() * 6);
             valorDado2 = Math.floor(1 + Math.random() * 6);
+            mostrarDados();
             return valorDado1 + valorDado2;
         }
         function mostrarDados() {
@@ -103,9 +108,9 @@
         }
         function establecerImagen(imgDado, valorDado) {
             if (isFinite(valorDado))
-                imgDado.src = "dado" + valorDado + ".png";
+                imgDado.src = "dado" + valorDado + ".jpg";
             else
-                imgDado.src = "blanco.png"
+                imgDado.src = "blanco.jpg";
         }
         function iniciar() {
             var botonJugar = document.getElementById("jugar");
@@ -120,6 +125,8 @@
 </head>
 
 <body>
+<link rel="stylesheet" type="text/css" href="../../CSS/button.css">
+<button onclick="location.href='../../index.html#indice'">Regresar</button>
     <audio id="tirodados" preload="auto">
         <source src="http://test.deitel.com/dicerolling.mp3" type="audio/mpeg">
         <source src="http://test.deitel.com/dicerolling.ogg" type="audio/ogg">
@@ -128,12 +135,12 @@
     <p><a href="ReglasCraps.html">Haga click aquí para un video corto que explica las reglas básicas de Craps</a></p>
     <div id="puntoDiv">
         <p class="punto">El punto es: </p>
-        <img id="puntoDado1" src="blanco.png" alt="Dado 1 de valor de punto">
-        <img id="puntoDado2" src="blanco.png" alt="Dado 2 de valor de punto">
+        <img id="puntoDado1" src="blanco.jpg" alt="Dado 1 de valor de punto">
+        <img id="puntoDado2" src="blanco.jpg" alt="Dado 2 de valor de punto">
     </div>
     <div class="tiroDiv">
-        <img id="tiroDado1" src="blanco.png" alt="Dado 1 de valor de tiro">
-        <img id="TiroDado2" src="blanco.png" alt="Dado 2 de valor de tiro">
+        <img id="tiroDado1" src="blanco.jpg" alt="Dado 1 de valor de tiro">
+        <img id="tiroDado2" src="blanco.jpg" alt="Dado 2 de valor de tiro">
     </div>
     <form action="#">
         <input id="jugar" type="button" value="Jugar">
